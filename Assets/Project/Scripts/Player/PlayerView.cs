@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 
 
-namespace WP.Zelda.Player
+namespace WP.Zelda.PlayerScripts
 {
     public class PlayerView : MonoBehaviour
     {
@@ -43,7 +43,7 @@ namespace WP.Zelda.Player
 
         private void ProcessInputs()
         {
-            controller.ProcessMovement(rb, playerConfs.movementSpeed);
+            controller.ProcessMovement(rb, playerConfs.movementSpeed, playerConfs.movementKeyMap);
             controller.ProcessRotation(model, playerConfs.rotationSpeed);
             controller.ProcessJump(rb, playerConfs.jumpSpeed);
         }

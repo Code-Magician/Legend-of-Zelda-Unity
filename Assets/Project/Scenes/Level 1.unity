@@ -814,9 +814,14 @@ MonoBehaviour:
   rb: {fileID: 2112975497}
   model: {fileID: 252060454}
   playerConfs:
-    speed: 5
-    jumpVelocity: 5
+    movementSpeed: 5
+    jumpSpeed: 5
     rotationSpeed: 5
+    movementKeyMap:
+      forward: 119
+      backward: 115
+      right: 100
+      left: 97
 --- !u!54 &2112975497
 Rigidbody:
   m_ObjectHideFlags: 0

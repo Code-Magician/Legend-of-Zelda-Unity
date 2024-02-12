@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace WP.Zelda.Player
+namespace WP.Zelda.PlayerScripts
 {
     [Serializable]
     public class PlayerConfigurations
@@ -13,5 +13,13 @@ namespace WP.Zelda.Player
         public float movementSpeed;
         public float jumpSpeed;
         public float rotationSpeed;
+        public MovementKeyMap movementKeyMap;
+        public KeyCode jumpKey;
+    };
+
+    [Serializable]
+    public class MovementKeyMap
+    {
+        public KeyCode forward, backward, right, left;
     }
 }
