@@ -33,9 +33,12 @@ namespace WP.Zelda.PlayerScripts
             Movement.Rotate(playerModel, rotationSpeed);
         }
 
-        internal void ProcessJump(Rigidbody rb, float jumpSpeed)
+        internal void ProcessJump(Rigidbody rb, float jumpSpeed, KeyCode jumpKey)
         {
-            Movement.Jump(rb, jumpSpeed);
+            if(Input.GetKey(jumpKey))
+            {
+                Movement.Jump(rb, jumpSpeed);
+            }
         }
 
         #endregion

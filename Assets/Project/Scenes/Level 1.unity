@@ -822,6 +822,7 @@ MonoBehaviour:
       backward: 115
       right: 100
       left: 97
+    jumpKey: 32
 --- !u!54 &2112975497
 Rigidbody:
   m_ObjectHideFlags: 0

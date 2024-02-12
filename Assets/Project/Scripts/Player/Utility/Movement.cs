@@ -70,7 +70,7 @@ public class Movement
     internal static void Jump(Rigidbody rb, float jumpSpeed)
     {
         CheckCanJump(rb.transform.position, 1.01f);
-        if (canJump && Input.GetKeyDown(KeyCode.Space))
+        if (canJump)
         {
             canJump = false;
             rb.velocity = new Vector3(

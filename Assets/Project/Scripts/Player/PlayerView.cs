@@ -45,7 +45,7 @@ namespace WP.Zelda.PlayerScripts
         {
             controller.ProcessMovement(rb, playerConfs.movementSpeed, playerConfs.movementKeyMap);
             controller.ProcessRotation(model, playerConfs.rotationSpeed);
-            controller.ProcessJump(rb, playerConfs.jumpSpeed);
+            controller.ProcessJump(rb, playerConfs.jumpSpeed, playerConfs.jumpKey);
         }
 
         #endregion
