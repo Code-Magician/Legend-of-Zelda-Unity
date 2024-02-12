@@ -813,9 +813,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2112975497}
   model: {fileID: 252060454}
-  speed: 5
-  jumpVelocity: 5
-  rotationSpeed: 5
+  playerConfs:
+    speed: 5
+    jumpVelocity: 5
+    rotationSpeed: 5
 --- !u!54 &2112975497
 Rigidbody:
   m_ObjectHideFlags: 0
